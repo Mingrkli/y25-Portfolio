@@ -1,0 +1,17 @@
+{
+    "name": "y25-portfolio",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "watch": "sass --watch src/styles/main.scss public/styles/main.css",
+        "build": "sass src/styles:public/styles --no-source-map --style=compressed && npx terser src/js/*.js -o public/js/main.min.js --compress --mangle"
+    },
+    "keywords": [],
+    "author": "Ming Li",
+    "license": "ISC",
+    "description": "My new portfolio created in 2025",
+    "dependencies": {
+        "gsap": "^3.12.7",
+        "sass": "^1.84.0"
+    }
+}

@@ -1,0 +1,51 @@
+#mouseFollow {
+    position: fixed;
+    left: 0;
+    top: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 15px;
+    width: 15px;
+
+    background-color: rgb(239, 184, 3);
+    // background-color: rgb(140, 255, 255);
+    border-radius: 100%;
+
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 500ms ease;
+    z-index: 1000;
+}
+
+/* Shows the mouseFollow when the user is hollowing over the site */
+body:hover > #mouseFollow {
+    opacity: 1;
+}
+
+/* Hides the mouseFollow if hovering over nav */
+body:hover > nav:hover ~ #mouseFollow {
+    opacity: 0;
+}
+
+/* This is the icon inside of the mouseFollow which is from google icons */
+#mouseFollow-icon {
+    color: black;
+    font-size: 0.5rem;
+
+    opacity: 0;
+    transition: opacity 500ms ease;
+}
+
+/* If the data-type of the mouseFollow is not empty, we will show the mouseFollow-icon */
+#mouseFollow:not([data-type=""]) > #mouseFollow-icon {
+    opacity: 1;
+}
+
+@media screen and (max-width: 540px) {
+    #mouseFollow {
+        display: none;
+    }
+}
