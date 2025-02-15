@@ -20,7 +20,6 @@ window.onmousemove = (e) => {
     // Changes the innerHTML to a different name depending on the return form the getMouseFollowClass(type)
     if (interacting) {
         icon.innerHTML = getMouseFollowClass(intractable.dataset.type);
-        console.log("test");
     }
 };
 

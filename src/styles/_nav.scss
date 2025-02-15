@@ -136,16 +136,20 @@ nav {
         z-index: 1002;
 
         a {
-            font-size: 3rem;
+            font-size: 1.5rem;
 
-            &.button {
-                background: transparent;
+            &:not(.name-home-btn) {
+                padding: 0.5rem 0;
+                width: 100%;
+
+                background: rgba(0, 158, 158, 0.6);
+                border-radius: 0;
             }
         }
 
         button {
-            width: 5rem;
-            height: 5rem;
+            width: 4rem;
+            height: 4rem;
         }
 
         div {
@@ -161,6 +165,12 @@ nav {
 
         &.show {
             transform: translateX(0);
+
+            div {
+                width: 100%;
+
+                text-align: center;
+            }
         }
     }
 

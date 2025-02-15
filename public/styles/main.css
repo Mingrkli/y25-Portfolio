@@ -21,7 +21,7 @@ nav {
   align-items: center;
   padding: 1rem;
   width: 100%;
-  background: rgba(250, 250, 250, 0.5);
+  background: rgba(240, 240, 240, 0.5);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.3);
@@ -62,7 +62,7 @@ nav a.button {
   border-radius: 20px;
 }
 nav a.button:hover {
-  color: rgb(250, 250, 250);
+  color: rgb(240, 240, 240);
   background: black;
 }
 nav button {
@@ -113,14 +113,17 @@ nav div:nth-child(2) {
     z-index: 1002;
   }
   nav a {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
-  nav a.button {
-    background: transparent;
+  nav a:not(.name-home-btn) {
+    padding: 0.5rem 0;
+    width: 100%;
+    background: rgba(0, 158, 158, 0.6);
+    border-radius: 0;
   }
   nav button {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
   }
   nav div {
     flex-direction: column;
@@ -132,6 +135,10 @@ nav div:nth-child(2) {
   }
   nav.show {
     transform: translateX(0);
+  }
+  nav.show div {
+    width: 100%;
+    text-align: center;
   }
   #menu-popup {
     position: fixed;
@@ -218,7 +225,7 @@ section#skills #skills-grid .skill {
   gap: 1rem;
   padding: 1rem;
   color: rgb(30, 30, 30);
-  background: rgba(250, 250, 250, 0.5);
+  background: rgba(240, 240, 240, 0.5);
   border-radius: 20px;
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.3);
   z-index: 1001;
@@ -231,14 +238,14 @@ section#skills #skills-grid .skill :before {
   right: -50%;
   width: 100px;
   height: 100px;
-  background: rgb(4, 213, 213);
+  background: rgb(239, 184, 3);
   border-radius: 100%;
   transition: 500ms ease-in-out;
   z-index: -1;
 }
 section#skills #skills-grid .skill:hover {
-  color: rgb(250, 250, 250);
-  box-shadow: 0 0 16px 0 cyan;
+  color: rgb(240, 240, 240);
+  box-shadow: 0 0 16px 0 rgb(239, 184, 3);
   transition: 500ms ease-in-out;
 }
 section#skills #skills-grid .skill:hover :before {
@@ -254,8 +261,14 @@ section#skills #skills-grid .skill img {
   user-select: none;
   pointer-events: none;
 }
+section#about a {
+  color: rgb(0, 158, 158);
+}
 section#contact h2 {
   padding-bottom: 0.5rem;
+}
+section#contact a {
+  color: rgb(0, 158, 158);
 }
 section#contact img {
   width: 50px;
@@ -325,7 +338,7 @@ section#contact div {
   align-items: center;
   height: 15px;
   width: 15px;
-  background-color: rgb(239, 184, 3);
+  background-color: rgb(4, 213, 213);
   border-radius: 100%;
   pointer-events: none;
   opacity: 0;
@@ -369,32 +382,38 @@ body:hover > nav:hover ~ #mouseFollow {
 }
 
 body {
-  background: rgb(250, 250, 250);
+  background: rgb(240, 240, 240);
   font-family: "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.2rem;
   color: rgb(30, 30, 30);
 }
 body.dark {
   background: rgb(30, 30, 30);
-  color: rgb(250, 250, 250);
+  color: rgb(240, 240, 240);
 }
 body.dark nav {
   background: rgba(30, 30, 30, 0.5);
 }
 body.dark nav a {
-  color: rgb(250, 250, 250);
+  color: rgb(240, 240, 240);
 }
 body.dark nav a.button {
   color: rgb(30, 30, 30);
 }
 body.dark nav a.button:hover {
-  color: rgb(250, 250, 250);
+  color: rgb(240, 240, 240);
 }
 body.dark .social-links {
-  border-top: 2px solid rgb(250, 250, 250);
+  border-top: 2px solid rgb(240, 240, 240);
 }
 body.dark .social-links a {
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7453%) hue-rotate(124deg) brightness(94%) contrast(113%);
+}
+body.dark #about a {
+  color: rgb(4, 213, 213);
+}
+body.dark #contact a {
+  color: rgb(4, 213, 213);
 }
 body.dark #contact div img {
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7453%) hue-rotate(124deg) brightness(94%) contrast(113%);
@@ -402,10 +421,10 @@ body.dark #contact div img {
 
 @media screen and (max-width: 960px) {
   body.dark nav {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
   }
   body.dark nav a.button {
-    color: rgb(250, 250, 250);
+    color: rgb(240, 240, 240);
   }
   body.dark #menu-popup {
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7453%) hue-rotate(124deg) brightness(94%) contrast(113%);

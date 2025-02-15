@@ -1,3 +1,5 @@
+@use "colors";
+
 #mouseFollow {
     position: fixed;
     left: 0;
@@ -10,7 +12,7 @@
     height: 15px;
     width: 15px;
 
-    background-color: rgb(239, 184, 3);
+    background-color: colors.$c-highlight;
     // background-color: rgb(140, 255, 255);
     border-radius: 100%;
 

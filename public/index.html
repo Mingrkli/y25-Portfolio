@@ -9,10 +9,16 @@
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         />
         <link rel="stylesheet" href="styles/main.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="js/projects.js" defer></script>
         <script src="js/main.min.js" defer></script>
     </head>
-    <body>
+    <body class="dark">
         <!-- Particle Background -->
         <canvas id="partical-bg"></canvas>
 
@@ -25,7 +31,7 @@
 
         <nav>
             <div>
-                <a href="#home" class="link">Ming Li</a>
+                <a href="#home" class="link name-home-btn">Ming Li</a>
             </div>
 
             <div>
@@ -37,15 +43,17 @@
             </div>
 
             <div>
-                <a href="assets/pdf/Resume.pdf" class="button" target="_blank">Resume</a>
+                <a href="assets/pdf/Resume.pdf" class="button" target="_blank"
+                    >Resume</a
+                >
                 <button id="light-dark-btn" type="button">
                     <img
-                        class="light"
+                        class="light hidden"
                         src="assets/icons/sun-solid.svg"
                         alt="Sun Icon"
                     />
                     <img
-                        class="hidden dark"
+                        class="dark"
                         src="assets/icons/moon-solid.svg"
                         alt="Moon Icon"
                     />
@@ -53,17 +61,17 @@
             </div>
         </nav>
 
-        <div id="menu-popup" >
+        <div id="menu-popup">
             <img
-                class="menu-open"        
+                class="menu-open"
                 src="assets/icons/menu.svg"
-                    alt="Menu Open"
-                />
+                alt="Menu Open"
+            />
             <img
-                    class="menu-close hidden"
-                    src="assets/icons/x.svg"
-                    alt="Menu Close"
-                />
+                class="menu-close hidden"
+                src="assets/icons/x.svg"
+                alt="Menu Close"
+            />
         </div>
 
         <main>
@@ -74,10 +82,11 @@
                     <span>💻 Full Stack Developer | Software Engineer</span>
                 </h2>
                 <h2>
-                    I love creating fast, intuitive, and scalable web applications using
-                    JavaScript, React, Node.js, and well-structured data
-                    solutions. Passionate about learning, collaborating, and
-                    turning ideas into seamless digital experiences.
+                    I love creating fast, intuitive, and scalable web
+                    applications using JavaScript, React, Node.js, and
+                    well-structured data solutions. Passionate about learning,
+                    collaborating, and turning ideas into seamless digital
+                    experiences.
                 </h2>
                 <div class="social-links">
                     <h3>Let's build something great together! 😊</h3>
@@ -113,100 +122,137 @@
 
                 <div id="skills-grid">
                     <div class="skill">
-                        <img src="assets/icons/html.svg" alt="HTML Icon">
+                        <img src="assets/icons/html.svg" alt="HTML Icon" />
                         <h3>HTML</h3>
                     </div>
                     <div class="skill">
-                        <img src="assets/icons/css.svg" alt="CSS Icon">
+                        <img src="assets/icons/css.svg" alt="CSS Icon" />
                         <h3>CSS</h3>
                     </div>
                     <div class="skill">
-                        <img src="assets/icons/sass.svg" alt="SASS/SCSS Icon">
+                        <img src="assets/icons/sass.svg" alt="SASS/SCSS Icon" />
                         <h3>Sass/Scss</h3>
                     </div>
                     <div class="skill">
-                        <img src="assets/icons/js.svg" alt="JS Icon">
+                        <img src="assets/icons/js.svg" alt="JS Icon" />
                         <h3>JS</h3>
                     </div>
                     <div class="skill">
-                        <img src="assets/icons/node.js.svg" alt="Node.js Icon">
+                        <img
+                            src="assets/icons/node.js.svg"
+                            alt="Node.js Icon"
+                        />
                         <h3>Node.js</h3>
                     </div>
                     <div class="skill">
-                        <img src="assets/icons/react.svg" alt="React Icon">
+                        <img src="assets/icons/react.svg" alt="React Icon" />
                         <h3>React</h3>
                     </div>
                     <div class="skill">
-                        <img src="assets/icons/vuejs.svg" alt="Vue Icon">
+                        <img src="assets/icons/vuejs.svg" alt="Vue Icon" />
                         <h3>Vue</h3>
                     </div>
-                    
+
                     <div class="skill">
-                        <img src="assets/icons/php.svg" alt="PHP Icon">
+                        <img src="assets/icons/php.svg" alt="PHP Icon" />
                         <h3>PHP</h3>
                     </div>
-                    
+
                     <div class="skill">
-                        <img src="assets/icons/java.svg" alt="Java Icon">
+                        <img src="assets/icons/java.svg" alt="Java Icon" />
                         <h3>Java</h3>
                     </div>
                     <div class="skill">
-                        <img src="assets/icons/git.svg" alt="Git Icon">
+                        <img src="assets/icons/git.svg" alt="Git Icon" />
                         <h3>Git</h3>
                     </div>
                     <div class="skill">
-                        <img src="assets/icons/docker.svg" alt="Docker Icon">
+                        <img src="assets/icons/docker.svg" alt="Docker Icon" />
                         <h3>Docker</h3>
                     </div>
                 </div>
             </section>
 
-
-
             <section id="about">
                 <h1>About Me</h1>
 
-                <p></p>
-                Howdy there! I'm Ming Li, a passionate Bachelor of Applied Science student in Software Development at Green River College. I specialize in front-end and full-stack development, crafting user-friendly, scalable, and impactful web applications that connect businesses and consumers.
-
-
+                <p>
+                    Howdy there! I'm Ming Li, a passionate
+                    <span>Bachelor</span> of Applied Science student in
+                    <span>Software Development</span> at Green River College. I
+                    specialize in <span>front-end</span> and
+                    <span>full-stack</span> development, crafting user-friendly,
+                    scalable, and impactful web applications that connect
+                    businesses and consumers.
                 </p>
 
                 <p>
-                    I thrive in collaborative environments and believe innovation happens when great minds work together. Whether it's optimizing user experiences, building efficient back-end solutions, or tackling complex coding challenges, I'm always eager to learn, improve, and contribute to meaningful projects.
+                    I thrive in <span>collaborative environments</span> and
+                    believe innovation happens when great minds work together.
+                    Whether it's optimizing user experiences, building efficient
+                    back-end solutions, or tackling complex coding challenges,
+                    I'm always eager to learn, improve, and contribute to
+                    meaningful projects.
                 </p>
 
                 <p>
-                    Recently, I've worked on projects involving Node.js, structured data solutions, and cloud-based applications, gaining hands-on experience in Agile development and modern web technologies. Currently, I'm seeking an internship where I can apply my technical skills in a real-world setting and grow alongside experienced professionals.
+                    Recently, I've worked on projects involving
+                    <span>Node.js</span>, structured data solutions, and
+                    cloud-based applications, gaining hands-on experience in
+                    <span>Agile</span> development and modern web technologies.
+                    Currently, I'm seeking an internship where I can apply my
+                    technical skills in a real-world setting and grow alongside
+                    experienced professionals.
                 </p>
 
                 <p>
-                    Let's connect! If you're interested in working together, check out my <a data-type="link" href="assets/pdf/Resume.pdf" class="button intractable" target="_blank">Resume</a> or reach out in <a data-type="link" href="https://www.linkedin.com/in/mingrkli/" class="button intractable" target="_blank">Linkedin</a>. Who knows? Maybe we can chat about coding over some pizza sometime! 🍕😊
+                    Let's connect! If you're interested in working together,
+                    check out my
+                    <a
+                        data-type="link"
+                        href="assets/pdf/Resume.pdf"
+                        class="button intractable"
+                        target="_blank"
+                        >Resume</a
+                    >
+                    or reach out in
+                    <a
+                        data-type="link"
+                        href="https://www.linkedin.com/in/mingrkli/"
+                        class="button intractable"
+                        target="_blank"
+                        >Linkedin</a
+                    >. Who knows? Maybe we can chat about coding over some pizza
+                    sometime! 🍕😊
                 </p>
 
-                <p class="quote">You Made it Happen - Atesh Tarsa</p>
+                <p class="quote">"You Made it Happen" - Atesh Tarsa</p>
             </section>
 
             <section id="contact">
                 <h1>Contact Me</h1>
 
                 <div>
-                    <h2>Social Network</h2>
+                    <h2>Email</h2>
                     <a
-                    class="intractable"
-                    data-type="link"
-                    href="https://www.linkedin.com/in/mingrkli/"
-                    target="_blank"
-                    ><img
-                        src="assets/icons/linkedin.svg"
-                        alt="Linkedin icon"
-                    /></a>
+                        class="intractable"
+                        data-type="mail"
+                        href="mailto:someone@example.com"
+                        >Mingrkli@gmail.com</a
+                    >
                 </div>
 
                 <div>
-                    <h2>Email</h2>
-                    <a class="intractable"
-                    data-type="mail" href="mailto:someone@example.com">Mingrkli@gmail.com</a>
+                    <h2>Social Network</h2>
+                    <a
+                        class="intractable"
+                        data-type="link"
+                        href="https://www.linkedin.com/in/mingrkli/"
+                        target="_blank"
+                        ><img
+                            src="assets/icons/linkedin.svg"
+                            alt="Linkedin icon"
+                    /></a>
                 </div>
             </section>
         </main>

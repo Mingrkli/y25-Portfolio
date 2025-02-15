@@ -37,6 +37,8 @@ section {
         user-select: none;
     }
 
+    // Social Links
+    // ==============================================================
     .social-links {
         display: flex;
         align-items: start;
@@ -68,6 +70,8 @@ section {
         }
     }
 
+    // Skills
+    // ==============================================================
     &#skills {
         #skills-grid {
             display: grid;
@@ -103,7 +107,7 @@ section {
                     width: 100px;
                     height: 100px;
 
-                    background: colors.$c-highlight;
+                    background: colors.$c-highlight-sub;
                     border-radius: 100%;
 
                     transition: colors.$transition-500;
@@ -112,7 +116,7 @@ section {
 
                 &:hover {
                     color: colors.$c-bg;
-                    box-shadow: 0 0 16px 0 cyan;
+                    box-shadow: 0 0 16px 0 colors.$c-highlight-sub;
 
                     transition: colors.$transition-500;
 
@@ -140,9 +144,23 @@ section {
         }
     }
 
+    // About
+    // ==============================================================
+    &#about {
+        a {
+            color: colors.$c-highlight-darker;
+        }
+    }
+
+    // Contact
+    // ==============================================================
     &#contact {
         h2 {
             padding-bottom: 0.5rem;
+        }
+
+        a {
+            color: colors.$c-highlight-darker;
         }
 
         img {
