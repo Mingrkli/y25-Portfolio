@@ -5,7 +5,7 @@ canvas.height = window.innerHeight;
 const particlesArray = []; // Holds each particle
 
 // Settings
-const particleAmount = 30; // Sets the amount of particles in the bg
+const particleAmount = 7; // Sets the amount of particles in the bg
 
 let oldScroll = window.scrollY; // Store previous scroll position
 
@@ -49,7 +49,7 @@ class Particle {
     reset() {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
-        this.size = Math.random() * 20 + 5; // Adjusted to smaller particles
+        this.size = Math.random() * 20 + 200; // Adjusted to smaller particles
         this.speedX = Math.random() * 1 - 0.5; // Horizontal speed
         this.speedY = Math.random() * 1 - 0.5; // Vertical speed
         this.hsl = Math.floor(Math.random() * 40 + 160); // Random Color, however, I set mine to more blue-ish color since I like it
@@ -93,20 +93,20 @@ class Particle {
 
     // Moves the particle up (Connects to scroll)
     up() {
-        this.y -= 5;
+        this.y += 5;
 
         // If the particle goes too far up, reset it
-        if (this.y < -this.size) {
+        if (this.y < this.size) {
             this.reset();
         }
     }
 
     // Moves the particle down (Connects to scroll)
     down() {
-        this.y += 5;
+        this.y -= 5;
 
         // If the particle goes too far down, reset it
-        if (this.y > canvas.height + this.size) {
+        if (this.y > canvas.height - this.size) {
             this.reset();
         }
     }

@@ -21,9 +21,7 @@ nav {
   align-items: center;
   padding: 1rem;
   width: 100%;
-  background: rgba(240, 240, 240, 0.5);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  background: rgba(240, 240, 240, 0.9);
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.3);
   z-index: 2000;
 }
@@ -164,9 +162,11 @@ section {
   flex-direction: column;
   gap: 1rem;
   padding: 5rem;
-  height: 100vh;
   width: 100%;
   font-size: 1.5rem;
+}
+section#home, section#about {
+  height: 100vh;
 }
 section span {
   color: rgb(239, 184, 3);
@@ -210,6 +210,55 @@ section .social-links div a img {
   width: 32px;
   height: 32px;
 }
+section#projects #projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+section#projects #projects-grid .project {
+  position: relative;
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 20px;
+  transition: 500ms ease-in-out;
+  overflow: hidden;
+}
+section#projects #projects-grid .project:hover {
+  box-shadow: 0 0 20px rgb(4, 213, 213);
+}
+section#projects #projects-grid .project:hover div .project-title {
+  color: rgb(4, 213, 213);
+}
+section#projects #projects-grid .project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 500ms ease-in-out;
+}
+section#projects #projects-grid .project > div {
+  position: absolute;
+  bottom: 0;
+  padding: 0.5rem;
+  width: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+section#projects #projects-grid .project > div .project-title {
+  font-size: 2rem;
+  transition: 500ms ease-in-out;
+}
+section#projects #projects-grid .project > div .project-subTitle {
+  font-size: 1rem;
+}
+section#projects #projects-grid .project > div .project-skills {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+}
+section#projects #projects-grid .project > div .project-skills img {
+  width: 2rem;
+}
 section#skills #skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 250px));
@@ -225,7 +274,7 @@ section#skills #skills-grid .skill {
   gap: 1rem;
   padding: 1rem;
   color: rgb(30, 30, 30);
-  background: rgba(240, 240, 240, 0.5);
+  background: rgba(240, 240, 240, 0.9);
   border-radius: 20px;
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.3);
   z-index: 1001;
@@ -280,10 +329,21 @@ section#contact div {
   align-items: center;
 }
 
+@media screen and (min-width: 1920px) {
+  section#projects #projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  section#about p:not(.quote) {
+    font-size: 2rem;
+  }
+}
 @media screen and (max-width: 960px) {
   section {
     padding: 1rem;
     font-size: 1.1rem;
+  }
+  section#home, section#about {
+    height: 100%;
   }
   section h1,
   section h2,
@@ -309,6 +369,9 @@ section#contact div {
   section .social-links div a img {
     width: 50px;
     height: 50px;
+  }
+  section#projects #projects-grid {
+    grid-template-columns: 1fr;
   }
   section#skills #skills-grid {
     grid-template-columns: repeat(auto-fill, minmax(50px, 100px));
@@ -392,7 +455,7 @@ body.dark {
   color: rgb(240, 240, 240);
 }
 body.dark nav {
-  background: rgba(30, 30, 30, 0.5);
+  background: rgba(30, 30, 30, 0.9);
 }
 body.dark nav a {
   color: rgb(240, 240, 240);
