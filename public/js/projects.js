@@ -1,9 +1,17 @@
 projectsData = [
     {
+        title: "Anthropology Lab",
+        subTitle:
+            "Eletron App Inventory Software for Anthropology Lab Fossil Casts",
+        img: "img/projects/an.png",
+        link: "https://github.com/brandonviorato/anthropologyInventory/tree/main",
+        tags: ["html", "css", "js", "react", "eletron", "nodejs", "mongodb"],
+    },
+    {
         title: "Evergreen",
         subTitle:
-            " manage and submit tickets for our client's websites for customers to use.",
-        img: "img/projects/github.png",
+            "Manage and submit tickets for our client's websites for customers to use.",
+        img: "img/projects/ever.jpg",
         link: "https://github.com/Mingrkli/evergreenofficals",
         tags: ["html", "css", "js", "vue", "primeVue", "spring"],
     },
@@ -12,7 +20,7 @@ projectsData = [
         subTitle:
             "All-in-one solution for planning, productivity, and project management.",
         img: "img/projects/plannify.png",
-        link: "https://mingli.greenriverdev.com/328/SDEV328_TeamProject1Fix/SDEV328_TeamProject1/",
+        link: "https://github.com/Mingrkli/SDEV328_TeamProject1",
         tags: ["html", "css", "js", "php", "mysql"],
     },
     {
@@ -34,46 +42,40 @@ projectsData = [
         subTitle: "Mathematic eyes following user mouse.",
         img: "img/projects/eye.png",
         link: "https://mingrkli-spooky.netlify.app/",
-        tags: ["html", "css", "js"],
+        tags: ["js"],
     },
     {
         title: "Sound Animation",
-        subTitle: "Mathematic calculating volume into animation.",
+        subTitle: "Mathematic calculating music file volume into an animation.",
         img: "img/projects/sa.png",
         link: "https://sound-hearing-animation.netlify.app/",
-        tags: ["html", "css", "js"],
+        tags: ["js"],
     },
     {
         title: "Mouse Trail",
         subTitle: "Mouse matrix trail effect.",
         img: "img/projects/ct.png",
         link: "https://character-trail.netlify.app/",
-        tags: ["html", "js"],
+        tags: ["js"],
     },
     {
         title: "Minnew",
-        subTitle: "A neon news site",
+        subTitle: "News site experimenting with 3D cards.",
         img: "img/projects/minnew.png",
         link: "https://mingrkli-minnew.netlify.app/",
         tags: ["html", "css", "js"],
     },
     {
-        title: "Jake's Best Day",
-        subTitle: "A character information page.",
-        img: "img/projects/yoi.png",
-        link: "https://jake-best-day.netlify.app/",
-        tags: ["html", "css", "js"],
-    },
-    {
         title: "Mesco",
-        subTitle: "An E-commerce site.",
+        subTitle: "E-commerce site created for an anonymous client.",
         img: "img/projects/mesco.png",
         link: "https://mesco-shopping.netlify.app/",
         tags: ["html", "css", "js"],
     },
     {
         title: "Peakalo's",
-        subTitle: "A restaurant site.",
+        subTitle:
+            "Simple design for a restaurant site for an anonymous client.",
         img: "img/projects/diner.png",
         link: "https://peakalos-diner.netlify.app/",
         tags: ["html", "css"],
