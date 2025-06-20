@@ -1,6 +1,14 @@
 projectsData = [
     {
-        title: "Anthropology Lab",
+        title: "Anthropology Lab Site",
+        subTitle:
+            "Website Inventory Software for Anthropology Lab Fossil Casts",
+        img: "img/projects/an2.png",
+        link: "https://github.com/anthropology-inventory/docs",
+        tags: ["html", "css", "js", "react", "nodejs", "mongodb"],
+    },
+    {
+        title: "Anthropology Lab App",
         subTitle:
             "Eletron App Inventory Software for Anthropology Lab Fossil Casts",
         img: "img/projects/an.png",
